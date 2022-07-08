@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import * as a from "./fooo.generated.js"
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>

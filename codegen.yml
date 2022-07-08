@@ -1,0 +1,12 @@
+schema: ./schema.graphql
+documents: 'pages/**/*.graphql'
+generates:
+  pages/types.ts:
+    - typescript
+  pages/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.ts
+      baseTypesPath: types.ts
+    plugins:
+      - typescript-operations
